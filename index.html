@@ -16,39 +16,36 @@
         * { box-sizing: border-box; }
         body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; margin: 0; padding: 0; color: var(--dark); background: var(--light); line-height: 1.6; }
         
-        header { background: var(--primary); color: white; padding: 50px 20px; text-align: center; border-bottom: 4px solid var(--accent); }
-        header h1 { margin: 0; font-size: 2.8rem; letter-spacing: -0.5px; }
-        header p { font-size: 1.25rem; opacity: 0.9; margin-top: 10px; font-weight: 300; }
+        /* HEADER & LOGO */
+        header { background: var(--primary); color: white; padding: 30px 20px; text-align: center; border-bottom: 4px solid var(--accent); }
+        .logo-container { margin-bottom: 15px; }
+        .logo-container img { max-width: 180px; height: auto; border-radius: 8px; }
+        header h1 { margin: 0; font-size: 2.2rem; letter-spacing: -0.5px; }
+        header p { font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300; }
 
-        .hero { background: white; padding: 40px 20px; text-align: center; max-width: 800px; margin: 0 auto; }
-        .hero h2 { color: var(--primary); margin-bottom: 10px; }
+        /* HERO SECTION */
+        .hero { background: white; padding: 30px 20px; text-align: center; max-width: 800px; margin: 0 auto; }
+        .hero h2 { color: var(--primary); margin-bottom: 10px; font-size: 1.5rem; }
 
-        .form-section { background: white; max-width: 600px; margin: 20px auto 40px; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+        /* FORMULARIO */
+        .form-section { background: white; max-width: 600px; margin: 20px auto 30px; padding: 25px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
         .form-section h3 { margin-top: 0; color: var(--primary); text-align: center; }
         
-        .form-group { margin-bottom: 18px; text-align: left; }
+        .form-group { margin-bottom: 15px; text-align: left; }
         .form-group label { display: block; font-weight: 600; margin-bottom: 6px; font-size: 0.95rem; }
         .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; font-family: inherit; }
-        .form-group input:focus, .form-group select:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 3px rgba(0,115,230,0.15); }
 
-        .btn-submit { width: 100%; background: var(--whatsapp); color: white; border: none; padding: 16px; border-radius: 6px; font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: background 0.2s; display: flex; align-items: center; justify-content: center; gap: 10px; }
-        .btn-submit:hover { background: #1ebc57; }
+        .btn-submit { width: 100%; background: var(--whatsapp); color: white; border: none; padding: 16px; border-radius: 6px; font-weight: bold; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; }
 
-        .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; max-width: 1000px; margin: 0 auto 40px; }
-        .card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); flex: 1 1 280px; text-align: center; border-top: 3px solid var(--accent); }
+        /* SERVICIOS */
+        .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; max-width: 1000px; margin: 0 auto 30px; }
+        .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); flex: 1 1 280px; text-align: center; border-top: 4px solid var(--accent); }
         .card h3 { color: var(--primary); margin-top: 0; }
 
-        .testimonials { background: #eef4fa; padding: 40px 20px; text-align: center; }
-        .testimonials h2 { color: var(--primary); margin-bottom: 30px; }
-        .testimonial-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1000px; margin: 0 auto; }
-        .testimonial-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); flex: 1 1 280px; text-align: left; }
-        .stars { color: #f1c40f; margin-bottom: 10px; font-size: 1.1rem; }
-        .client-name { font-weight: bold; margin-top: 10px; color: var(--primary); font-size: 0.95rem; }
-
-        .map-section { background: white; padding: 40px 20px; text-align: center; }
-        .map-section h2 { color: var(--primary); margin-bottom: 15px; }
-        .map-container { max-width: 1000px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .map-container iframe { width: 100%; height: 350px; border: 0; }
+        /* MAPA DE UBICACIÓN */
+        .map-section { background: white; padding: 35px 20px; text-align: center; border-top: 1px solid #eaeaea; }
+        .map-section h2 { color: var(--primary); margin-bottom: 10px; }
+        .btn-map { display: inline-block; background: var(--accent); color: white; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-weight: bold; margin-top: 15px; font-size: 1.1rem; }
 
         footer { background: var(--primary); color: white; text-align: center; padding: 25px; }
         footer p { margin: 5px 0; font-size: 0.9rem; opacity: 0.8; }
@@ -57,6 +54,10 @@
 <body>
 
 <header>
+    <div class="logo-container">
+        <!-- Reemplaza NombreDeTuImagen.jpg con el nombre exacto de la foto que subiste a GitHub -->
+        <img src="IMG_20260816_004414.jpg" alt="Pro Glass Installations Logo" onerror="this.style.display='none'">
+    </div>
     <h1>Pro Glass Installations</h1>
     <p>Instalación experta, visión perfecta.</p>
 </header>
@@ -105,33 +106,12 @@
     </div>
 </section>
 
-<section class="testimonials">
-    <h2>Lo que dicen nuestros clientes</h2>
-    <div class="testimonial-grid">
-        <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p>"Excelente servicio. Cambiaron el parabrisas de mi camioneta súper rápido y la instalación quedó impecable, sin ninguna filtración."</p>
-            <div class="client-name">— Carlos M.</div>
-        </div>
-        <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p>"Muy profesionales y puntuales. Los recomiendo al 100%, el acabado y el sellado quedaron exactamente como de fábrica."</p>
-            <div class="client-name">— Andrea S.</div>
-        </div>
-        <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p>"Atención de primera por WhatsApp y un trabajo impecable en el taller. La mejor opción en cristales automotrices."</p>
-            <div class="client-name">— Roberto G.</div>
-        </div>
-    </div>
-</section>
-
 <section class="map-section">
-    <h2>Nuestra Ubicación</h2>
-    <p>Visítanos en nuestro taller o contáctanos para agendar tu cita.</p>
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127677.20324832595!2d-78.5706249!3d-0.180653!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a4002422c05%3A0x214b61b09152a925!2sQuito%2C%20Ecuador!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1ses!2sec" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+    <h2>📍 Nuestra Ubicación</h2>
+    <p>Haz clic abajo para abrir la ruta directa a nuestro taller en Google Maps:</p>
+    
+    <!-- Tu enlace real de Maps ya integrado -->
+    <a href="https://maps.app.goo.gl/jA6SoTpskZW7TfNR7" target="_blank" class="btn-map">🗺️ Abrir Ubicación en Google Maps</a>
 </section>
 
 <footer>
